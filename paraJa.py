@@ -12,6 +12,7 @@ def doJanome(lineData):
 	for token in Tokenizer().tokenize(text):
 		l=str(token).split('\t')
 		k=str(l[1]).split(',')
+		print(k)
 		if k[0] == '動詞' and k[1] == '自立':
 			output+=k[6]+","
 		if k[0] == '名詞' and k[1] == 'サ変接続':
@@ -52,7 +53,7 @@ with Pool(CPUs) as pool:
 	pool.map(doJanome,textData) # 並列処理
 
 # 一覧作成
-	for content in textData:
-		for w in content.get().split(','):
-			print(w)
-##print("All Finished")
+for content in textData:
+	for w in content.get().split(','):
+		print(w)
+
