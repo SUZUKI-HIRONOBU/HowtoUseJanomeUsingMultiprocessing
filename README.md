@@ -1,7 +1,7 @@
 # HowtoUseJanomeUsingMultiprocessing
 
 
-# 並列処理でJanomeライブラリを高速化する書き方.
+# 並列処理で[Janome](https://mocobeta.github.io/janome/)ライブラリを高速化する書き方.
 
 ```Shell
 python paraJa.py < text.txt  > result.txt
