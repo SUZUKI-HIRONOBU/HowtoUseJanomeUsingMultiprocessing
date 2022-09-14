@@ -12,7 +12,7 @@ def doJanome(lineData):
 	for token in Tokenizer().tokenize(text):
 		l=str(token).split('\t')
 		k=str(l[1]).split(',')
-		print(k)
+#		print(k)
 		if k[0] == '動詞' and k[1] == '自立':
 			output+=k[6]+","
 		if k[0] == '名詞' and k[1] == 'サ変接続':
